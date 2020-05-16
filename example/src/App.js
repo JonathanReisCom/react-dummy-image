@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'react-dummy-image'
-import 'react-dummy-image/dist/index.css'
+import DummyImage from 'react-dummy-image';
+import 'react-dummy-image/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <>
+      <DummyImage text="Create React Library Example 😄" />
+      <DummyImage format="jpg" />
+    </>
+  );
+};
 
-export default App
+export default App;

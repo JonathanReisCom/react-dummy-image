@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import DummyImage from '.';
 
-describe('ExampleComponent', () => {
+describe('DummyImage', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+    expect(DummyImage).toBeTruthy();
+  });
+});
