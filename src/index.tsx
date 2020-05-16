@@ -48,6 +48,9 @@ const DummyImage = (props: IDummyImage) => {
       link = `https://dummyimage.com/${width}x${height}/${cA}/${cB}.${format}&text=${str}`;
     }
     return link;
+
+    // Another link:
+    // http://ipsumimage.appspot.com/140x100,ff7700
   };
 
   const link = formatLink();

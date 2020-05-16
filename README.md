@@ -1,26 +1,49 @@
+<div align="center">
+
+<img width="150" src="/example/example.png?raw=true">
+<h1 align="center">Reacy Dummy Image</h1>
+
+A [React](https://reactjs.org/) library for creating test images to use as a development model
+
+[![NPM](https://img.shields.io/github/languages/top/JonathanReisCom/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
+[![NPM](https://img.shields.io/npm/v/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
+[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg)](https://isitmaintained.com/project/JonathanReisCom/react-dummy-image 'Average time to resolve an issue')
+
+<!-- [![npm downloads](https://img.shields.io/npm/dm/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image) -->
+
+<!-- [![CircleCI](https://img.shields.io/circleci/project/github/JonathanReisCom/react-dummy-image/master.svg)](https://circleci.com/gh/JonathanReisCom/react-dummy-image/tree/master) -->
+
+<!-- [![Coverage Status](https://img.shields.io/codecov/c/github/JonathanReisCom/react-dummy-image/master.svg)](https://codecov.io/gh/JonathanReisCom/react-dummy-image/branch/master) -->
+
+</div>
+
 <p align="center">
-  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
+  <a href="#Overview">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Install">Install</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#How">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#License">License</a>
 </p>
 
-# react-dummy-image
+## <img id="Overview" class="emoji" alt="Overview" height="30" width="30" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png?v8"> Overview
 
-> A library for creating test images to use as a development model
+Based on Russell Heimlich's concept at http://dummyimage.com this is a port for React to allow you generate dummy images of any specified dimension.
+A simple app to generate dummy/filler images on the fly at whatever size you want.
 
-[![NPM](https://img.shields.io/npm/v/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## :rocket: Technologies
+## <img id="Technologies" class="emoji" alt="Technologies" height="30" width="30" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8"> Technologies
 
 This project was developed with the following technologies:
 
 - [React](https://reactjs.org/)
 - [create-react-library](https://github.com/transitive-bullshit/create-react-library)
+- [Dummy Image PHP Script](https://github.com/kingkool68/dummyimage)
 - [PropTypes](https://github.com/facebook/prop-types)
 - [Shields.io](https://shields.io/)
 - [VS Code][vc] with [EditorConfig][vceditconfig]
 
-## :information_source: Install
+## <img id="Install" class="emoji" alt="Install" height="30" width="30" src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png"> Install
 
 ```bash
 npm install --save react-dummy-image
@@ -30,7 +53,7 @@ or
 yarn add react-dummy-image
 ```
 
-## :information_source: How To Use
+## <img id="How" class="emoji" alt="How To Use" height="30" width="30" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png?v8"> How To Use
 
 ```tsx
 import React, { Component } from 'react';
@@ -52,16 +75,18 @@ const Example = () => {
 export default Example;
 ```
 
-## :memo: License
+## <img id="License" class="emoji" alt="License" height="30" width="30" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png?v8"> License
 
 This project is under the MIT license. See the [LICENSE](https://github.com/JonathanReisCom/react-dummy-image/blob/master/LICENSE) for more information.
 
 ---
 
-Made with ♥ by Jonathan Reis :wave: [Get in touch!](www.linkedin.com/in/jonathan-reis-com)
+Made with <img height="15" width="15" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png?v8"> by Jonathan Reis <img height="15" width="15" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png?v8"> [Get in touch!](https://www.linkedin.com/in/jonathan-reis-com/)
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
 [vc]: https://code.visualstudio.com/
 [vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
 [vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+---
