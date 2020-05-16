@@ -3,7 +3,7 @@
 </p>
 
 <p style="text-align: center;" align="center">
-  <h1 align="center">React Dummy Image</h1>
+  <h2 align="center">React Dummy Image</h2>
 </p>
 
 <p style="text-align: center;" align="center">
@@ -17,13 +17,9 @@
 <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
 <img alt="Repository size" src="https://img.shields.io/github/repo-size/jonathanreiscom/react-dummy-image.svg">
 <img src="https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg">
+<img alt="GitHub issues badge" src="https://img.shields.io/github/issues/JonathanReisCom/react-dummy-image">
+<img alt="GitHub license badge" src="https://img.shields.io/github/license/JonathanReisCom/react-dummy-image">
 </p>
-
-<!-- [![NPM](https://img.shields.io/github/languages/top/JonathanReisCom/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
-[![NPM](https://img.shields.io/npm/v/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg)](https://isitmaintained.com/project/JonathanReisCom/react-dummy-image 'Average time to resolve an issue') -->
 
 <!-- [![npm downloads](https://img.shields.io/npm/dm/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image) -->
 
