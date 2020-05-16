@@ -2,9 +2,15 @@
   "name": "react-dummy-image",
   "version": "1.0.0",
   "description": "A library for creating test images to use as a development model",
-  "author": "JonathanReisCom",
+  "author": "Jonathan Reis <jonathan.reis@gmail.com> (http://www.jonathanreis.com)",
   "license": "MIT",
+  "private": false,
   "repository": "JonathanReisCom/react-dummy-image",
+  "homepage": "https://github.com/JonathanReisCom/react-dummy-image",
+  "bugs": {
+    "url": "https://github.com/JonathanReisCom/react-dummy-image/issues",
+    "email": "jonathan.reis@gmail.com"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
