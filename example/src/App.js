@@ -5,12 +5,16 @@ import 'react-dummy-image/dist/index.css';
 
 const App = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <DummyImage text="Text" />
+    <div className={'mycontainer'}>
+      <DummyImage text="Default" />
+      <br />
+      <DummyImage text="Sizes" width={150} height={100} />
       <br />
       <DummyImage text="Colors" color="#ff0000" textColor="#ffffff" />
       <br />
-      <DummyImage text="Sizes" width={200} height={200} />
+      <DummyImage text="Format.jpg" format={'jpg'} />
+      <br />
+      <DummyImage text="Class" className={'myimage'} />
     </div>
   );
 };

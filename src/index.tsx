@@ -2,6 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 
 type Format = 'gif' | 'jpg' | 'png';
+const defaultColor = '#CECECE';
+const defaultTextColor = '#000000';
 
 interface IDummyImage {
   width?: number;
@@ -13,6 +15,8 @@ interface IDummyImage {
 }
 
 const DummyImage = (props: IDummyImage) => {
+  const { width, height, color, text, textColor, format, ...otherProps } = props;
+
   const formatColor = (color: string) => {
     let result = color;
     if (color && color.charAt(0) === '#') {
@@ -24,38 +28,40 @@ const DummyImage = (props: IDummyImage) => {
   const formatText = (text: string) => {
     let result = text;
     if (text) {
-      result = text.replace(/[^a-zA-Z ]/g, '');
+      result = result.replace(/\++/g, '*');
+      result = result.replace(/\#+/g, '*');
+      result = result.replace(/\%+/g, '*');
+      result = result.replace(/\&+/g, '*');
       result = result.replace(/\s+/g, '+');
     }
     return result;
   };
 
   const formatLink = () => {
-    let link = `https://dummyimage.com/${width}x${height}/${color}/${textColor}&text=${text}`;
+    const cA = formatColor(color || defaultColor);
+    const cB = formatColor(textColor || defaultTextColor);
+    const str = formatText(text || 'Dummy+Image');
 
-    if (props.format) {
-      let format = props.format;
-      link = `https://dummyimage.com/${width}x${height}/${color}/${textColor}.${format}&text=${text}`;
+    let link = `https://dummyimage.com/${width}x${height}/${cA}/${cB}&text=${str}`;
+
+    if (format) {
+      link = `https://dummyimage.com/${width}x${height}/${cA}/${cB}.${format}&text=${str}`;
     }
     return link;
   };
 
-  const width = props.width;
-  const height = props.height;
-  const color = formatColor(props.color || '#CECECE');
-  const textColor = formatColor(props.textColor || '#000000');
-  const text = formatText(props.text || 'Dummy+Image');
   const link = formatLink();
 
-  return <img src={link} />;
+  return <img src={link} {...otherProps} />;
 };
 
 DummyImage.defaultProps = {
   width: 300,
   height: 100,
-  color: '#CECECE',
+  color: defaultColor,
   text: 'Dummy Image',
-  textColor: '#000000',
+  textColor: defaultTextColor,
+  format: 'png' as Format,
 } as Partial<IDummyImage>;
 
 DummyImage.propTypes = {

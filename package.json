@@ -1,6 +1,6 @@
 {
   "name": "react-dummy-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library for creating test images to use as a development model",
   "author": "Jonathan Reis <jonathan.reis@gmail.com> (http://www.jonathanreis.com)",
   "license": "MIT",
