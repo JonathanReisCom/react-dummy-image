@@ -2,7 +2,9 @@
   <img width="150" src="/example/example.png?raw=true">
 </p>
 
-<h1 align="center">React Dummy Image</h1>
+<p style="text-align: center;" align="center">
+  <h1 align="center">React Dummy Image</h1>
+</p>
 
 <p style="text-align: center;" align="center">
   A <a href="https://reactjs.org/">React</a> library for creating test images to use as a development model
@@ -13,6 +15,7 @@
 <img src="https://img.shields.io/npm/v/react-dummy-image.svg">
 <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
 <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
+<img alt="Repository size" src="https://img.shields.io/github/repo-size/jonathanreiscom/react-dummy-image.svg">
 <img src="https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg">
 </p>
 
