@@ -1,23 +1,32 @@
-<div align="center">
+<p style="text-align: center;" align="center">
+  <img width="150" src="/example/example.png?raw=true">
+</p>
 
-<img width="150" src="/example/example.png?raw=true">
-<h1 align="center">Reacy Dummy Image</h1>
+<h1 align="center">React Dummy Image</h1>
 
-A [React](https://reactjs.org/) library for creating test images to use as a development model
+<p style="text-align: center;" align="center">
+  A <a href="https://reactjs.org/">React</a> library for creating test images to use as a development model
+</p>
 
-[![NPM](https://img.shields.io/github/languages/top/JonathanReisCom/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
+<p style="text-align: center;" align="center">
+<img src="https://img.shields.io/github/languages/top/JonathanReisCom/react-dummy-image.svg">
+<img src="https://img.shields.io/npm/v/react-dummy-image.svg">
+<img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
+<img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
+<img src="https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg">
+</p>
+
+<!-- [![NPM](https://img.shields.io/github/languages/top/JonathanReisCom/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
 [![NPM](https://img.shields.io/npm/v/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg)](https://isitmaintained.com/project/JonathanReisCom/react-dummy-image 'Average time to resolve an issue')
+[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/JonathanReisCom/react-dummy-image.svg)](https://isitmaintained.com/project/JonathanReisCom/react-dummy-image 'Average time to resolve an issue') -->
 
 <!-- [![npm downloads](https://img.shields.io/npm/dm/react-dummy-image.svg)](https://www.npmjs.com/package/react-dummy-image) -->
 
 <!-- [![CircleCI](https://img.shields.io/circleci/project/github/JonathanReisCom/react-dummy-image/master.svg)](https://circleci.com/gh/JonathanReisCom/react-dummy-image/tree/master) -->
 
 <!-- [![Coverage Status](https://img.shields.io/codecov/c/github/JonathanReisCom/react-dummy-image/master.svg)](https://codecov.io/gh/JonathanReisCom/react-dummy-image/branch/master) -->
-
-</div>
 
 <p align="center">
   <a href="#Overview">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
