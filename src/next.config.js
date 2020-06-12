@@ -8,7 +8,7 @@ const path = require('path');
 const assetPrefixForNamespace = (namespace) => {
   switch (namespace) {
     case 'prod':
-      return 'https://jonathanreiscom.github.io/react-dummy-image/';
+      return '/react-dummy-image';
     case 'export_mac':
       return '/my-menu/out';
     case 'development':
@@ -22,6 +22,9 @@ const namespace = process.env.NAMESPACE;
 module.exports = withPlugins([[withSass], [withImages]], {
   // assetPrefix: '/my-menu/out', // affects page bundles and app/commons/vendor scripts
   assetPrefix: assetPrefixForNamespace(namespace),
+  exportPathMap: () => ({
+    '/': { page: '/' },
+  }),
   webpack: (config) => {
     // config.output.publicPath = `/my-menu/out${config.output.publicPath}`; // affects 'chunks'
     config.output.publicPath = `${assetPrefixForNamespace(namespace)}${config.output.publicPath}`;
