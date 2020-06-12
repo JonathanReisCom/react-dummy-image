@@ -29,6 +29,13 @@ module.exports = withPlugins([[withSass], [withImages]], {
     // config.output.publicPath = `/my-menu/out${config.output.publicPath}`; // affects 'chunks'
     config.output.publicPath = `${assetPrefixForNamespace(namespace)}${config.output.publicPath}`;
     config.resolve.modules.push(path.resolve('./'));
+
+    // config.plugins.push(
+    //   new webpack.DefinePlugin({
+    //     'process.env.ASSET_PREFIX': JSON.stringify(assetPrefixForNamespace(namespace)),
+    //   })
+    // );
+
     return config;
   },
 });
