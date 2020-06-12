@@ -10,7 +10,7 @@ const assetPrefixForNamespace = (namespace) => {
     case 'prod':
       return '/react-dummy-image';
     case 'export_mac':
-      return '/my-menu/out';
+      return '/react-dummy-image';
     case 'development':
       return '';
     default:
@@ -19,22 +19,20 @@ const assetPrefixForNamespace = (namespace) => {
 };
 const namespace = process.env.NAMESPACE;
 
+console.log('USANDO ESTE NAMESPACE:', namespace, assetPrefixForNamespace(namespace));
+
 module.exports = withPlugins([[withSass], [withImages]], {
-  // assetPrefix: '/my-menu/out', // affects page bundles and app/commons/vendor scripts
   assetPrefix: assetPrefixForNamespace(namespace),
-  exportPathMap: () => ({
-    '/': { page: '/' },
-  }),
+
   webpack: (config) => {
-    // config.output.publicPath = `/my-menu/out${config.output.publicPath}`; // affects 'chunks'
     config.output.publicPath = `${assetPrefixForNamespace(namespace)}${config.output.publicPath}`;
     config.resolve.modules.push(path.resolve('./'));
 
-    // config.plugins.push(
-    //   new webpack.DefinePlugin({
-    //     'process.env.ASSET_PREFIX': JSON.stringify(assetPrefixForNamespace(namespace)),
-    //   })
-    // );
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefixForNamespace(namespace)),
+      })
+    );
 
     return config;
   },

@@ -10,19 +10,10 @@ import GoogleAnalytics from '../common/GoogleAnalytics';
 import TopMenuBar from '../components/TopMenuBar/TopMenuBar';
 import Header from '../components/Containers/Header';
 import Section from '../components/Containers/Section';
-// import SubSection from '../components/Containers/SubSection';
-// import Bold from '../components/Bold';
-// import Profile from '../components/SubSections/Profile';
-// import GithubChart from '../components/SubSections/GithubChart';
 
 // Logger
 import Logger from '../common/Logger';
 const log = new Logger({ label: 'Index', enabled: true, important: true });
-
-// Firebase
-// import API from '../common/FirebaseApi';
-// const Api = new API();
-// import useGlobalState from '../common/useGlobalState';
 
 // Style
 import theme from '../common/Theme';

@@ -23,7 +23,7 @@ import Settings from '@material-ui/icons/Settings';
 // Lodash
 import get from 'lodash/get';
 // My Components
-
+import customLink from '../../common/CustomLinks';
 import Logger from '../../common/Logger';
 // Images
 // import logo from 'assets/images/logo-jonathan-reis-com.png';
@@ -102,7 +102,7 @@ const Component = (props) => {
           placement={'top'}
           arrow
           classes={{ tooltip: classes.tooltip }}>
-          <Button className={classes.listButton} href={'/'} target={'_self'}>
+          <Button className={classes.listButton} href={customLink('/')} target={'_self'}>
             Home
           </Button>
         </Tooltip>
@@ -114,7 +114,7 @@ const Component = (props) => {
           placement={'top'}
           arrow
           classes={{ tooltip: classes.tooltip }}>
-          <Button className={classes.listButton} href={'/other'} target={'_self'}>
+          <Button className={classes.listButton} href={customLink('/other')} target={'_self'}>
             Other page
           </Button>
         </Tooltip>
